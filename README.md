@@ -1,7 +1,20 @@
 # bp-csv
 
-Formats exports from [Blood Pressure Monitor](https://f-droid.org/en/packages/com.derdilla.bloodPressureApp/) to a more
-human-readable format.
+Formats exports from
+[Blood Pressure Monitor](https://f-droid.org/en/packages/com.derdilla.bloodPressureApp/)
+to a more human-readable format.
+
+### Pre-Reqs
+
+[Go 1.18+](https://go.dev/)
+
+## Install
+
+```bash
+make install
+# or
+go install
+```
 
 ## Build
 
@@ -14,5 +27,5 @@ go build -o ./bin/bp-csv
 ## Usage
 
 ```bash
-./bin/bp-csv ./path/to/original/csv/export.csv
+bp-csv ./path/to/original/csv/export.csv
 ```
